@@ -1,42 +1,268 @@
+:root {
+  --ink: #1f2430;
+  --muted: #5a6373;
+  --heading: #3f3a67;
+  --accent: #2f7d4a;
+  --line: #d8dce6;
+  --paper: #ffffff;
+  --bg: #f4f6fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.35;
+  font-size: 15px;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.page {
+  max-width: 980px;
+  margin: 24px auto;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 30px rgba(15, 20, 35, 0.08);
+  padding: 28px 36px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.lang-switch {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.lang-btn {
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.lang-btn.active {
+  border-color: var(--heading);
+  color: #fff;
+  background: var(--heading);
+}
+
+.header {
+  border: 2px solid var(--heading);
+  padding: 12px 14px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 1.05;
+  margin: 0;
+  color: var(--heading);
+  letter-spacing: 0.2px;
+}
+
+.role {
+  margin: 2px 0 10px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.contacts a {
+  color: #264f94;
+  text-decoration: none;
+}
+
+.divider {
+  border: 0;
+  height: 2px;
+  background: var(--heading);
+  margin: 4px 0 18px;
+  opacity: 0.65;
+}
+
+.section {
+  margin-bottom: 16px;
+}
+
+.section h2 {
+  font-size: 34px;
+  margin: 0 0 8px;
+  color: var(--heading);
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.summary {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+ul {
+  margin: 8px 0 0 20px;
+  padding: 0;
+  font-size: 23px;
+}
+
+li {
+  margin: 3px 0;
+}
+
+.job {
+  margin-top: 10px;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 25px;
+  margin-bottom: 2px;
+}
+
+.job-title {
+  font-weight: 800;
+}
+
+.job-title a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #b6bcc9;
+}
+
+.job-meta {
+  color: #222;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3px;
+  font-size: 23px;
+}
+
+.skills-grid strong {
+  color: #27324f;
+}
+
+.edu-title {
+  font-size: 25px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.edu-meta {
+  margin: 0;
+  color: #2e3340;
+  font-size: 22px;
+}
+
+.quote {
+  margin-top: 10px;
+  font-style: italic;
+  color: #2a2f3c;
+  font-size: 21px;
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 900px) {
+  .page {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    padding: 16px;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .role {
+    font-size: 22px;
+  }
+
+  .contacts {
+    font-size: 14px;
+  }
+
+  .section h2 {
+    font-size: 24px;
+  }
+
+  .summary,
+  ul,
+  .job-header,
+  .skills-grid,
+  .edu-title,
+  .edu-meta,
+  .quote {
+    font-size: 15px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media print {
+  @page {
+    size: A4;
+    margin: 8mm 10mm;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  body {
+    background: #fff;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 
-.read-the-docs {
-  color: #888;
+  .lang-switch,
+  .lang-btn {
+    display: none !important;
+  }
+
+  .page {
+    max-width: none;
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .section,
+  .job,
+  .split > div {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
