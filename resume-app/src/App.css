@@ -194,6 +194,19 @@ li {
   gap: 12px;
 }
 
+/* Medium screens: improve multi-column layout */
+@media (min-width: 700px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 18px;
+  }
+
+  .split {
+    grid-template-columns: 1.1fr 1fr;
+    align-items: flex-start;
+  }
+}
+
 @media (max-width: 900px) {
   .page {
     margin: 0;
@@ -226,6 +239,44 @@ li {
   .edu-meta,
   .quote {
     font-size: 15px;
+  }
+
+  .job-meta {
+    white-space: normal;
+  }
+
+  .page {
+    padding: 12px;
+  }
+}
+
+/* Extra small screens: tighten spacing and fonts */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .role {
+    font-size: 18px;
+  }
+
+  .section h2 {
+    font-size: 20px;
+  }
+
+  .summary,
+  ul,
+  .job-header,
+  .skills-grid,
+  .edu-title,
+  .edu-meta,
+  .quote {
+    font-size: 14px;
+  }
+
+  .contacts {
+    font-size: 12px;
+    gap: 4px;
   }
 }
 
