@@ -194,19 +194,6 @@ li {
   gap: 12px;
 }
 
-/* Medium screens: improve multi-column layout */
-@media (min-width: 700px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 18px;
-  }
-
-  .split {
-    grid-template-columns: 1.1fr 1fr;
-    align-items: flex-start;
-  }
-}
-
 @media (max-width: 900px) {
   .page {
     margin: 0;
