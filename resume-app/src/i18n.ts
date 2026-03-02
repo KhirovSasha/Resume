@@ -25,6 +25,7 @@ const resources = {
           education: "Education",
           volunteering: "Volunteering & Social Impact",
           statsConnect: "Contacts",
+          aboutMe: "About Me",
         },
         summary:
           "A goal-oriented Frontend Developer focused on professional growth and continuous skill improvement. I specialize in the modern JavaScript stack (ES6+), HTML5, and CSS3, with a deep understanding of responsive design and performance optimization. Skilled in transforming complex design layouts into clean, semantic, and maintainable code. Highly adaptable to different projects and tasks, consistently striving to achieve the best results in every challenge.",
@@ -33,7 +34,10 @@ const resources = {
           "Designed and developed React layouts for dynamic web interfaces, focusing on reusable components and fast rendering.",
           "Built frontend solutions for Wagtail (Django), ensuring seamless design integration with the CMS and flexible content management.",
           "Optimized project performance, consistently achieving 90+ scores on Google PageSpeed Insights through asset and code optimization.",
+          "",
         ],
+        aboutMe:
+          "I lead an active lifestyle with a passion for sports like frisbee, running, and hiking. I dream of climbing in the Alps one day. I also have an old black cat named Murzik (my favorite 'old-timer'), with whom I explore Tabletop RPGs. In the evenings, I'm always up for some board games.",
         toolkit: {
           languagesLabel: "Programming Languages:",
           languages:
@@ -123,6 +127,7 @@ const resources = {
           education: "Освіта",
           volunteering: "Волонтерство та соціальний вплив",
           statsConnect: "Контакти",
+          aboutMe: "Про мене",
         },
         summary:
           "Цілеспрямований розробник, зосереджений на саморозвитку та вдосконаленні навичок. Спеціалізуюся на сучасному стеку JavaScript (ES6+), HTML5 та CSS3, з глибоким розумінням адаптивного дизайну та оптимізації продуктивності. Маю навички перетворення складних дизайн-макетів у чистий, семантичний та зручний у підтримці код. Адаптовуюсь під різні проєкти та завдання, прагнучи досягти найкращих результатів у кожному виклику.",
@@ -132,6 +137,8 @@ const resources = {
           "Розробив frontend-рішення для Wagtail (Django), забезпечуючи безшовну інтеграцію дизайну з CMS та гнучке управління контентом.",
           "Оптимізував продуктивність проєктів, досягаючи показників 90+ у Google PageSpeed Insights завдяки оптимізації активів та коду.",
         ],
+        aboutMe:
+          "Я веду активний спосіб життя і особливо люблю спортивну діяльність, включаючи фрісбі, біг та піші туристичні походи. Маю мрію спробувати скелелазіння в Альпах. Також у мене є старий чорний кіт на ім'я Мурзик (мій улюблений 'старий пердун'), з яким я досліджую настільні рольові ігри. Вечорами я завжди непроти для настільних ігор.",
         toolkit: {
           languagesLabel: "Мови програмування:",
           languages:

@@ -21,9 +21,12 @@ type ResumeContent = {
     workExperience: string;
     education: string;
     volunteering: string;
+    statsConnect: string;
+    aboutMe: string;
   };
   summary: string;
   summaryList: string[];
+  aboutMe: string;
   toolkit: {
     languagesLabel: string;
     languages: string;
@@ -146,6 +149,11 @@ function App() {
             <strong>{content.toolkit.speakingLanguagesLabel}</strong> {content.toolkit.speakingLanguages}
           </div>
         </div>
+      </section>
+
+      <section className="section">
+        <h2>{content.sections.aboutMe}</h2>
+        <p className="summary">{content.aboutMe}</p>
       </section>
 
       <section className="section">
