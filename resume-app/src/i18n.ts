@@ -15,6 +15,8 @@ const resources = {
           linkedInUrl: "https://www.linkedin.com/in/sasha-khirov-626b31220/",
           githubLabel: "GitHub",
           githubUrl: "https://github.com/KhirovSasha",
+          telegramLabel: "Telegram",
+          telegramUrl: "https://t.me/khirooooooo",
         },
         sections: {
           professionalSummary: "Professional Summary",
@@ -22,7 +24,7 @@ const resources = {
           workExperience: "Work Experience",
           education: "Education",
           volunteering: "Volunteering & Social Impact",
-          statsConnect: "Stats & Contacts",
+          statsConnect: "Contacts",
         },
         summary:
           "A goal-oriented Frontend Developer focused on professional growth and continuous skill improvement. I specialize in the modern JavaScript stack (ES6+), HTML5, and CSS3, with a deep understanding of responsive design and performance optimization. Skilled in transforming complex design layouts into clean, semantic, and maintainable code. Highly adaptable to different projects and tasks, consistently striving to achieve the best results in every challenge.",
@@ -40,6 +42,8 @@ const resources = {
           frameworks: "React, Tailwind CSS, WordPress, Bootstrap, Django.",
           toolsLabel: "Tools & Environment:",
           tools: "Git, GitHub, NPM/Yarn, Vite, Webpack, Gulp.",
+          speakingLanguagesLabel: "Languages:",
+          speakingLanguages: "Ukrainian (Native), English (A2)",
         },
         jobs: {
           devolux: {
@@ -88,12 +92,6 @@ const resources = {
             ],
           },
         },
-        stats: {
-          languages: "Languages: Ukrainian (Native), English (A2)",
-          telegramLabel: "Telegram:",
-          telegramHandle: "@khirooooooo",
-          telegramUrl: "https://t.me/khirooooooo",
-        },
         quote: "\"Clean code and 'Kawabunga' inspire my journey.\"",
         language: {
           en: "EN",
@@ -115,6 +113,8 @@ const resources = {
           linkedInUrl: "https://www.linkedin.com/in/sasha-khirov-626b31220/",
           githubLabel: "GitHub",
           githubUrl: "https://github.com/KhirovSasha",
+          telegramLabel: "Telegram",
+          telegramUrl: "https://t.me/khirooooooo",
         },
         sections: {
           professionalSummary: "Характеристика",
@@ -122,7 +122,7 @@ const resources = {
           workExperience: "Досвід роботи",
           education: "Освіта",
           volunteering: "Волонтерство та соціальний вплив",
-          statsConnect: "Статистика та контакти",
+          statsConnect: "Контакти",
         },
         summary:
           "Цілеспрямований розробник, зосереджений на саморозвитку та вдосконаленні навичок. Спеціалізуюся на сучасному стеку JavaScript (ES6+), HTML5 та CSS3, з глибоким розумінням адаптивного дизайну та оптимізації продуктивності. Маю навички перетворення складних дизайн-макетів у чистий, семантичний та зручний у підтримці код. Адаптовуюсь під різні проєкти та завдання, прагнучи досягти найкращих результатів у кожному виклику.",
@@ -140,6 +140,8 @@ const resources = {
           frameworks: "React, Tailwind CSS, WordPress, Bootstrap, Django.",
           toolsLabel: "Інструменти та середовище:",
           tools: "Git, GitHub, NPM/Yarn, Vite, Webpack, Gulp.",
+          speakingLanguagesLabel: "Мови:",
+          speakingLanguages: "Українська (рідна), Англійська (A2)",
         },
         jobs: {
           devolux: {
@@ -187,12 +189,6 @@ const resources = {
               "Місії в Макарові та Одесі: Брав участь у відновленні житлової інфраструктури та покращенні громадських просторів. Розвинув навички командної роботи та управління стресом у високонавантажених середовищах.",
             ],
           },
-        },
-        stats: {
-          languages: "Мови: Українська (рідна), Англійська (A2)",
-          telegramLabel: "Telegram:",
-          telegramHandle: "@khirooooooo",
-          telegramUrl: "https://t.me/khirooooooo",
         },
         quote: "\"Чистий код та 'Kawabunga' надихають мою подорож.\"",
         language: {

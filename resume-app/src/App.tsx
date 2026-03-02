@@ -12,6 +12,8 @@ type ResumeContent = {
     linkedInUrl: string;
     githubLabel: string;
     githubUrl: string;
+    telegramLabel: string;
+    telegramUrl: string;
   };
   sections: {
     professionalSummary: string;
@@ -19,7 +21,6 @@ type ResumeContent = {
     workExperience: string;
     education: string;
     volunteering: string;
-    statsConnect: string;
   };
   summary: string;
   summaryList: string[];
@@ -30,6 +31,8 @@ type ResumeContent = {
     frameworks: string;
     toolsLabel: string;
     tools: string;
+    speakingLanguagesLabel: string;
+    speakingLanguages: string;
   };
   jobs: {
     devolux: {
@@ -61,12 +64,6 @@ type ResumeContent = {
       meta: string;
       points: string[];
     };
-  };
-  stats: {
-    languages: string;
-    telegramLabel: string;
-    telegramHandle: string;
-    telegramUrl: string;
   };
   quote: string;
   language: {
@@ -111,6 +108,10 @@ function App() {
             {content.contacts.linkedInLabel}
           </a>
           <span>•</span>
+          <a href={content.contacts.telegramUrl} target="_blank" rel="noreferrer">
+            {content.contacts.telegramLabel}
+          </a>
+          <span>•</span>
           <a href={content.contacts.githubUrl} target="_blank" rel="noreferrer">
             {content.contacts.githubLabel}
           </a>
@@ -140,6 +141,9 @@ function App() {
           </div>
           <div>
             <strong>{content.toolkit.toolsLabel}</strong> {content.toolkit.tools}
+          </div>
+          <div>
+            <strong>{content.toolkit.speakingLanguagesLabel}</strong> {content.toolkit.speakingLanguages}
           </div>
         </div>
       </section>
@@ -210,19 +214,6 @@ function App() {
             {content.volunteering.bur.points.map((point) => (
               <li key={point}>{point}</li>
             ))}
-          </ul>
-        </div>
-
-        <div>
-          <h2>{content.sections.statsConnect}</h2>
-          <ul>
-            <li>{content.stats.languages}</li>
-            <li>
-              <strong>{content.stats.telegramLabel}</strong>{" "}
-              <a href={content.stats.telegramUrl} target="_blank" rel="noreferrer">
-                {content.stats.telegramHandle}
-              </a>
-            </li>
           </ul>
         </div>
       </section>
